@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets2/favicon-16x16.png">
+    <link rel="manifest" href="assets2/site.webmanifest">
+    <link rel="mask-icon" href="assets2/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <a href="newp2.html"></a>
+
+    <style>
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-image: url(assets1/websi\ \(1\).png);
+            background-size: cover;
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .left-content>img {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            margin-top: 180px;
+            margin-left: 45px;
+            box-shadow: -5px 2px 2px 2px rgb(210, 175, 59);
+        }
+        
+        .secondsection {
+            position: relative;
+            color: rgb(207, 205, 205);
+        }
+        
+        .aboutme {
+            top: -250px;
+            margin-left: 345px;
+            font-size: 30px;
+            color: rgb(210, 175, 59);
+            position: relative;
+            animation: text 3s 1;
+        }
+        
+        .paragraph1 {
+            position: relative;
+            margin-left: 350px;
+            margin-right: 310px;
+            top: -250px;
+            font-size: small;
+            line-height: 20px;
+            text-align: justify;
+            animation: text 5s 1;
+        }
+        
+        @keyframes text {
+            0% {
+                color: rgb(74, 75, 75);
+            }
+        }
+        
+        @media screen and (max-width: 1024px) {
+            .wrapper {
+                flex-direction: column;
+                background-color: rgb(50, 50, 50);
+                height: 100vh;
+                width: 100%;
+                background-image: none;
+            }
+            .left-content>img {
+                margin-top: 20px;
+                margin-left: 35%;
+                margin-right: auto;
+                height: 120px;
+                width: 120px;
+            }
+            .aboutme {
+                position: relative;
+                top: 10px;
+                margin-left: 0;
+                text-align: center;
+            }
+            .paragraph1 {
+                position: relative;
+                top: 30px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+
+
+            <section class="secondsection">
+                <div class="left-content">
+
+                    <img src="assets1/IMG-20230503-WA0014.jpg" alt="">
+                </div>
+                <div class="right-content">
+                    <h1 class="aboutme">ABOUT ME </h1>
+                    <p class="paragraph1"> Greetings! I'm Prusti Doshi, a dynamic individual on an exciting journey of self-discovery and growth. I recently completed my B.Com Honours from the esteemed Institute of Commerce, Nirma University. This academic journey instilled
+                        in me a strong foundation in analytical thinking, problem-solving, and attention to detail. Now, I'm diving into Full Stack Development. I combine my commerce background with tech's creative problem-solving. Crafting seamless web
+                        experiences is my jam. I believe tech should be user-centric and business-smart. I thrive on curiosity, diligence, and adaptability, always eager to learn and innovate. Whether you're a fellow techie or have exciting projects in
+                        mind, reach out! We can journey together in tech, creativity, and innovation.</p>
+                </div>
+        </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>

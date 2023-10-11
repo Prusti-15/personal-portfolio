@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+    <a href="newp2.html"></a>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 1fr);
+            height: 80vh;
+            max-width: 1080px;
+            margin: 70px auto;
+            gap: 10px;
+        }
+        
+        .box {
+            background-color: #1D204B;
+            border-radius: 15px;
+            position: relative;
+        }
+        
+        .box:nth-child(1) {
+            grid-row: 1/-1;
+        }
+        
+        .box:first-child {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 1fr;
+            background-color: #1D204B;
+        }
+        
+        .box:not(:first-child) {
+            background-color: #1D204B;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 3fr;
+        }
+        
+        .box:first-child>div:nth-child(1) {
+            background-color: #4427E4;
+            border-radius: 15px;
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+            z-index: 1;
+        }
+        
+        .box:first-child>div:nth-child(2) {
+            background-color: #16163A;
+            border-radius: 15px;
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+            display: flex;
+            align-items: flex-end;
+            color: aliceblue;
+        }
+        
+        .box:not(:first-child)>div:nth-child(1) {
+            background-color: #FC7652;
+            border-radius: 15px;
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+            z-index: 1;
+        }
+        
+        .box:not(:first-child)>div:nth-child(2) {
+            background-color: #16163A;
+            border-radius: 15px;
+            grid-column: 1 / -1;
+            grid-row: 2 / -1;
+            z-index: 1;
+        }
+        
+        .box:nth-child(3)>div:nth-child(1) {
+            background-color: #56C2E6;
+        }
+        
+        .box:nth-child(4)>div:nth-child(1) {
+            background-color: #FF5E7D;
+        }
+        
+        .box:nth-child(5)>div:nth-child(1) {
+            background-color: #4BCF83;
+        }
+        
+        .box:nth-child(6)>div:nth-child(1) {
+            background-color: #7235D1;
+        }
+        
+        .box:nth-child(7)>div:nth-child(1) {
+            background-color: #EEBC4E;
+        }
+        
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            color: aliceblue;
+            margin-left: 40px;
+            margin-top: 30px;
+        }
+        
+        h1 {
+            color: aliceblue;
+            margin-left: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 5px;
+        }
+        
+        h5 {
+            color: aliceblue;
+            margin-left: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .image p {
+            margin-top: 50px;
+        }
+        
+        .image img {
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        
+        img {
+            margin-left: 200px;
+        }
+        
+        .row ul li {
+            flex-direction: row;
+            text-decoration: none;
+            display: flex;
+        }
+        
+        @media only screen and (min-width: 1024px) {
+            .wrapper {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+            .row ul li {
+                display: flex;
+                flex-direction: column;
+            }
+            li p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="image">
+                <img src="assets1/image-jeremy.png" alt="">
+
+                <p>Report for</p>
+                <h1>PRUSTI DOSHI</h1>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>
+                        <p>Daily</p>
+                        <p>Weekly</p>
+                        <p>Monthly</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="assets1/icon-work.svg" alt="">
+            </div>
+            <div class="leftcolumn">
+                <p><b>Work</b></p>
+                <h1>32hrs</h1>
+                <div class="rightcolumn">
+                    <h5>Last week-36hrs</h5>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="assets1/icon-play.svg" alt="">
+
+            </div>
+            <div>
+                <p><b>Play</b></p>
+                <h1>10hrs</h1>
+                <h5>Last week-8hrs</h5>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="assets1/icon-study.svg" alt="">
+            </div>
+            <div>
+                <p><b>Study</b></p>
+                <h1>4hrs</h1>
+                <h5>Last week-7hrs</h5>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="assets1/icon-exercise.svg" alt="">
+            </div>
+            <div>
+                <p><b>Exercise</b></p>
+                <h1>4hrs</h1>
+                <h5>Last week-5hrs</h5>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="assets1/icon-social.svg" alt="">
+            </div>
+            <div>
+                <p><b>Social</b></p>
+                <h1>5hrs</h1>
+                <h5>Last week-10hrs</h5>
+            </div>
+        </div>
+        <div class="box">
+            <div>
+                <img src="assets1/icon-self-care.svg" alt="">
+            </div>
+            <div>
+                <p><b>Self-care</b></p>
+                <h1>2hrs</h1>
+                <h5>Last week-2hrs</h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

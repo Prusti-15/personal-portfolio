@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets2/favicon-16x16.png">
+    <link rel="manifest" href="assets2/site.webmanifest">
+    <link rel="mask-icon" href="assets2/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <a href="newp2.html"></a>
+    <style>
+        .wrapper {
+            background: url(assets1/websi\ \(1\).png);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .bigbox {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        h1 {
+            color: rgb(210, 175, 59);
+            position: absolute;
+            left: 450px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+        }
+        
+        h2 {
+            position: relative;
+            top: 15px;
+        }
+        
+        .box {
+            height: 80px;
+            width: 200px;
+            background-color: rgb(210, 175, 59);
+            border-radius: 30px;
+            top: 100px;
+            position: relative;
+        }
+        
+        .box1 {
+            height: 60px;
+            width: 150px;
+            border-radius: 30px;
+            background-color: aliceblue;
+            margin-left: 20px;
+            margin-top: -25px;
+            font-size: 10px;
+        }
+        
+        .box:hover {
+            box-shadow: -3px 2px 2px 2px white;
+        }
+        
+        .box1:hover {
+            box-shadow: 4px 3px 1px 2px rgb(210, 175, 59);
+        }
+        
+        h3 {
+            color: white;
+            position: relative;
+            top: -10px;
+            animation: text 10s 1;
+            font-size: 25px;
+        }
+        
+        .box:nth-child(2) {
+            position: relative;
+            left: 100px;
+        }
+        
+        .box:nth-child(4) {
+            position: relative;
+            right: 90px;
+        }
+        
+        .box:nth-child(5) {
+            position: relative;
+            left: 100px;
+            top: 65px;
+        }
+        
+        .box:nth-child(6) {
+            top: 65px;
+        }
+        
+        .box:nth-child(7) {
+            position: relative;
+            right: 90px;
+            top: 65px;
+        }
+        
+        .box:nth-child(8) {
+            position: relative;
+            left: 100px;
+            top: 40px;
+        }
+        
+        .box:nth-child(9) {
+            top: 40px;
+        }
+        
+        .box:nth-child(10) {
+            position: relative;
+            right: 90px;
+            top: 40px;
+        }
+        
+        @keyframes text {
+            0% {
+                color: white;
+            }
+        }
+        
+        @media screen and (max-width: 756px) {
+            .wrapper {
+                margin: 0;
+                padding: 0;
+                background: none;
+                position: absolute;
+                text-align: center;
+                justify-content: space-between;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .bigbox {
+                background: none;
+                background-color: rgb(54, 54, 54);
+                height: 100%;
+                width: 100vw;
+                display: grid;
+                grid-template-columns: repeat(2, 250px);
+                grid-template-rows: repeat(4, 250px);
+            }
+            .box {
+                height: 90px;
+                width: 120px;
+                background-color: rgb(210, 175, 59);
+                border-radius: 30px;
+                top: 130px;
+                position: relative;
+                left: 70px;
+            }
+            .box:hover {
+                box-shadow: 3px 2px 2px 2px white;
+            }
+            .box1:hover {
+                box-shadow: none;
+            }
+            .box1 {
+                position: relative;
+                height: 80px;
+                width: 105px;
+                top: 5px;
+                left: -30px;
+                border-radius: 30px;
+                background-color: aliceblue;
+                box-shadow: -2px 2px 2px 0px rgb(210, 175, 59);
+            }
+            h1 {
+                margin-left: -300px;
+                top: 30px;
+            }
+            h3 {
+                left: 30px;
+                position: relative;
+                color: aliceblue;
+                top: -10px;
+                left: -5px;
+                font-size: 20px;
+            }
+            h2 {
+                position: relative;
+                top: 30px;
+                font-size: 14.5px;
+                color: rgb(210, 175, 59);
+            }
+            .box:nth-child(2) {
+                position: relative;
+                left: 70px;
+            }
+            .box:nth-child(3) {
+                position: relative;
+                left: 0px;
+            }
+            .box:nth-child(4) {
+                position: relative;
+                left: 70px;
+                top: 40px;
+            }
+            .box:nth-child(5) {
+                position: relative;
+                left: 0px;
+                top: 40px;
+            }
+            .box:nth-child(6) {
+                top: -35px;
+            }
+            .box:nth-child(7) {
+                position: relative;
+                left: 0px;
+                top: -35px;
+            }
+            .box:nth-child(8) {
+                position: relative;
+                left: 70px;
+                top: -100px;
+            }
+            .box:nth-child(9) {
+                top: -100px;
+                left: 0px;
+            }
+            .box:nth-child(10) {
+                position: relative;
+                left: 150px;
+                top: -175px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bigbox">
+            <h1>SKILLS</h1>
+
+            <div class="box">
+                <h3>95%</h3>
+                <div class="box1">
+                    <h2 class="newtag">HTML</h2>
+                </div>
+
+            </div>
+
+
+            <div class="box">
+                <h3>90%</h3>
+                <div class="box1">
+                    <h2>CSS</h2>
+                </div>
+
+            </div>
+
+
+            <div class="box">
+                <h3>50%</h3>
+                <div class="box1">
+                    <h2>JAVA SCRIPT</h2>
+                </div>
+
+            </div>
+
+
+
+            <div class="box">
+                <h3>75%</h3>
+                <div class="box1">
+                    <h2>COMMUNI-CATION</h2>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>90%</h3>
+                <div class="box1">
+                    <h2> GIT AND GITHUB</h2>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>90%</h3>
+                <div class="box1">
+                    <h2>MS EXCEL</h2>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>90% </h3>
+                <div class="box1">
+                    <h2>MS-POWERPOINT</h2>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>90%</h3>
+                <div class="box1">
+                    <h2>MS WORD</h2>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <h3>80%</h3>
+                <div class="box1">
+                    <h2>DATA-ANALYSIS</h2>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
