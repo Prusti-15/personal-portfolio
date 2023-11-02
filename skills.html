@@ -234,6 +234,111 @@
                 top: -175px;
             }
         }
+        
+        @media screen and (max-width: 360px) {
+            .wrapper {
+                margin: 0;
+                padding: 0;
+                background: none;
+                position: absolute;
+                text-align: center;
+                justify-content: space-between;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .bigbox {
+                background: none;
+                background-color: rgb(54, 54, 54);
+                height: 100%;
+                width: 100vw;
+                display: grid;
+                grid-template-columns: repeat(2, 250px);
+                grid-template-rows: repeat(4, 250px);
+            }
+            .box {
+                height: 90px;
+                width: 120px;
+                background-color: rgb(210, 175, 59);
+                border-radius: 30px;
+                top: 130px;
+                position: relative;
+                left: 70px;
+            }
+            .box:hover {
+                box-shadow: 3px 2px 2px 2px white;
+            }
+            .box1:hover {
+                box-shadow: none;
+            }
+            .box1 {
+                position: relative;
+                height: 80px;
+                width: 105px;
+                top: 5px;
+                left: -30px;
+                border-radius: 30px;
+                background-color: aliceblue;
+                box-shadow: -2px 2px 2px 0px rgb(210, 175, 59);
+            }
+            h1 {
+                margin-left: -85%;
+                top: 20px;
+            }
+            h3 {
+                left: 30px;
+                position: relative;
+                color: aliceblue;
+                top: -10px;
+                left: -5px;
+                font-size: 20px;
+            }
+            h2 {
+                position: relative;
+                top: 30px;
+                font-size: 14.5px;
+                color: rgb(210, 175, 59);
+            }
+            .box:nth-child(2) {
+                position: relative;
+                left: 40px;
+            }
+            .box:nth-child(3) {
+                position: relative;
+                left: -30px;
+            }
+            .box:nth-child(4) {
+                position: relative;
+                left: 40px;
+                top: 40px;
+            }
+            .box:nth-child(5) {
+                position: relative;
+                left: -30px;
+                top: 40px;
+            }
+            .box:nth-child(6) {
+                top: -35px;
+                left: 40px;
+            }
+            .box:nth-child(7) {
+                position: relative;
+                left: -30px;
+                top: -35px;
+            }
+            .box:nth-child(8) {
+                position: relative;
+                left: 40px;
+                top: -100px;
+            }
+            .box:nth-child(9) {
+                top: -100px;
+                left: -30px;
+            }
+            .box:nth-child(10) {
+                position: relative;
+                left: 130px;
+                top: -175px;
+            }
+        }
     </style>
 </head>
 

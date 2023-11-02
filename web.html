@@ -7,7 +7,7 @@
     <a href="newp2.html"></a>
     <title>WEB DEVELOPER</title>
     <style>
-        .wrapper video {
+        .box1 video {
             right: 0;
             bottom: 0;
             position: absolute;
@@ -53,7 +53,7 @@
                 height: 100%;
                 width: 100vw;
             }
-            .wrapper video {
+            .box1 video {
                 right: 0;
                 bottom: 0;
                 z-index: -1;
@@ -64,36 +64,81 @@
             .box {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, 240px);
-                position: fixed;
-                margin-left: 25%;
+                margin-top: 50px;
             }
             button {
-                height: 150px;
-                width: 150px;
+                height: 120px;
+                width: 120px;
                 position: relative;
             }
             .button2 {
                 position: relative;
-                top: -50px;
+                top: -20px;
             }
             .button1 {
                 position: relative;
-                top: 40px;
+                top: 20px;
+            }
+            .button3 {
+                position: relative;
+                top: -55px;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .wrapper {
+                height: 100%;
+                width: 100vw;
+            }
+            .box1 video {
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                position: absolute;
+                width: auto;
+                height: 100%;
+            }
+            .box {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 240px);
+            }
+            button {
+                height: 120px;
+                width: 120px;
+                position: relative;
+                left: -30px;
+            }
+            .button2 {
+                position: relative;
+                top: 30px;
+            }
+            .button1 {
+                position: relative;
+                top: 50px;
+            }
+            .button3 {
+                position: relative;
+                top: 20px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="box1">
         <video autoplay loop muted plays-inline class="backvideo">
-         <source src="assets2/f7082cc4-f4f2-45ec-965f-41531ad232a6.mp4" type="video/mp4">
-        </video>
+            <source src="assets3/prusti (1).mp4" type="video/mp4">
+           </video>
+        <div class="wrapper">
 
-        <div class="box">
 
-            <a href="task1.html"><button class="button1">TASK1</button></a>
-            <a href="task2.html"><button class="button2">TASK2</button></a>
+            <div class="box">
+
+                <a href="task1.html"><button class="button1">TASK1</button></a>
+                <a href="task2.html"><button class="button2">TASK2</button></a>
+                <a href="task3.html"><button class="button3">TASK3</button></a>
+
+            </div>
         </div>
     </div>
 
